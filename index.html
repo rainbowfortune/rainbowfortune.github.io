@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        .logo {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            width: 160px;
+            height: 160px;
+            background: url("/logo.jpg");
+            border-radius: 50%;
+            background-size: contain;
+        }
+        .name {
+            position: fixed;
+            top: 90px;
+            left: 200px;
+            width: 300px;
+            height: 70px;
+            text-align: center;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px cornflowerblue;
+            /* background-color: coral; */
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .name > i#a {
+            color:crimson;
+            display: flex;
+            flex-direction: row;
+        }
+        .name > i#b {
+            color: chocolate;
+            display: flex;
+            flex-direction: row;
+        }
+        .name > i#c {
+            color:gold;
+            display: flex;
+            flex-direction: row;
+        }
+        .name > i#d {
+            color:chartreuse;
+            display: flex;
+            flex-direction: row;
+        }
+        .name > i#e {
+            color:dodgerblue;
+            display: flex;
+            flex-direction: row;
+        }
+        .name > i#f {
+            color:darkmagenta;
+            display: flex;
+            flex-direction: row;
+        }
+        .moto {
+            position: fixed;
+            top: 200px;
+            text-align: left;
+            left: 50px;
+            color: azure;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color:wheat;
+            text-shadow: 2px 2px 3px brown;
+            width: 400px;
+            height: 140px;
+            /* background-color: darkslateblue; */
+        }
+        .fog {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 480px;
+            height: 400px;
+            background-color:rgba(250, 235, 215, 0.355);
+            box-shadow: 1px 1px 2px wheat;
+        }
+        .team {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            width: 300px;
+            background-color:rgba(255, 235, 205, 0.356);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: justify;
+            columns: 2;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .team > i {
+            color: brown;
+        }
+        .team > a {
+            text-decoration: none;
+            font-size: large;
+        }
+        .card {
+            position: fixed;
+            top: 180px;
+            right: 30px;
+            background-color:rgba(255, 235, 205, 0.356);
+            width: 300px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .card > a, a:visited {
+            color: brown;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="fog">
+        <div class="logo"></div>
+        <div class="name">
+            <i id="a">Р</i>
+            <i id="b">А</i>
+            <i id="c">Д</i>
+            <i id="d">У</i>
+            <i id="e">Г</i>
+            <i id="f">А</i>
+        </div>
+        <div class="moto">Lorem ipsum dolor sit, amet.</div>
+   </div>
+   <div class="team">
+        <i>Programmer:    Гончаров Ян</i><a href="mailto:gonyan005@gmail.com">📧</a>
+        <i>Designer:      Ботько Валерия</i><a href="mailto:botsko.valeria@gmail.com">📧</a>
+        <i>Team Lead:     Комаров Арсений</i><a href="mailto:business.arseniy@gmail.com">📧</a>
+        <i>Analytics:     Демидович Никита</i><a href="mailto:grodnonik2005@gmail.com">📧</a>
+        <i>Thinker:       Широкий Артем</i><a href="mailto:a.shiroky2005@gmail.com">📧</a>
+        <i><a href="https://www.artstation.com/artwork/1AGwX">Model</a> provided by <a href="https://www.artstation.com/glenatron">Glen Fox</a>, CC Attribution</i>
+   </div>
+   <div class="card">
+        <a href="https://docs.google.com/document/d/11RsyiIQkJvSpZDHo4XlhFAu6Tee0AVn1/">
+            Оценочный лист визитки
+        </a>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
